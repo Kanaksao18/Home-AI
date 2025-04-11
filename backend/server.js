@@ -13,19 +13,62 @@ app.use(bodyParser.json());
 // In-memory device storage
 const devices = {
   light: { status: "off", room: "Living Room" },
-  light: { status: "off", room: "Bedroom" },
-  light: { status: "off", room: "Drawing Room" },
-  light: { status: "off", room: "Guest Room" },
-  light: { status: "off", room: " Kitchen" },
-
-  fan: { status: "off", room: "Bedroom" },
+  fan: { status: "off", room: "Living Room" },
   tv: { status: "off", room: "Living Room" },
-  ac: { status: "off", room: "Bedroom" },
+  ac: { status: "off", room: "Living Room" },
+  heater: { status: "off", room: "Living Room" },
+  vacuum: { status: "off", room: "Living Room" },
+  blinds: { status: "off", room: "Living Room" },
+  carbonMonoxideDetector: { status: "off", room: "Living Room" },
   speaker: { status: "off", room: "Living Room" },
-  doorLock: { status: "on", room: "Entrance" },
-  thermostat: { status: "off", room: "Bedroom" },
   cleaningDevice: { status: "off", room: "Living Room" },
+
+  light: { status: "off", room: "Bedroom" },
+  fan: { status: "off", room: "Bedroom" },
+  tv: { status: "off", room: "Bedroom" },
+  ac: { status: "off", room: "Bedroom" },
+  heater: { status: "off", room: "Bedroom" },
+  airPurifier: { status: "off", room: "Bedroom" },
+  humidifier: { status: "off", room: "Bedroom" },
+  dehumidifier: { status: "off", room: "Bedroom" },
+  curtains: { status: "off", room: "Bedroom" },
+  thermostat: { status: "off", room: "Bedroom" },
+
+  light: { status: "off", room: "Drawing Room" },
+  fan: { status: "off", room: "Drawing Room" },
+  fan: { status: "off", room: "Drawing Room" },
+  tv: { status: "off", room: "Drawing Room" },
+  ac: { status: "off", room: "Drawing Room" },
+  heater: { status: "off", room: "Drawing Room" },
+
+  light: { status: "off", room: "Guest Room" },
+  fan: { status: "off", room: "Guest Room" },
+  tv: { status: "off", room: "Guest Room" },
+  ac: { status: "off", room: "Guest Room" },
+  heater: { status: "off", room: "Guest Room" },
+
+  light: { status: "off", room: " Kitchen" },
+  fan: { status: "off", room: " Kitchen" },
+  ac: { status: "off", room: " Kitchen" },
+  heater: { status: "off", room: " Kitchen" },
+  coffeeMachine: { status: "off", room: "Kitchen" },
+  oven: { status: "off", room: "Kitchen" },
+  fridge: { status: "off", room: "Kitchen" },
+  smokeDetector: { status: "off", room: "Kitchen" },
+
+  washingMachine: { status: "off", room: "Laundry" },
+
+  smartMirror: { status: "off", room: "Bathroom" },
+  waterHeater: { status: "off", room: "Bathroom" },
+
+  irrigationSystem: { status: "off", room: "Garden" },
+  garageDoor: { status: "off", room: "Garage" },
+
+  motionSensor: { status: "off", room: "Entrance" },
+  doorbellCamera: { status: "off", room: "Entrance" },
+  smartLock: { status: "off", room: "Entrance" },
   securityCamera: { status: "off", room: "Entrance" },
+};
 };
 
 const schedules = [];
