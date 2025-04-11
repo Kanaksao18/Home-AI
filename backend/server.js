@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const schedule = require("node-schedule");
-const bcrypt = require("bcrypt");
 
 const app = express();
 const PORT = 5000;
@@ -68,7 +67,6 @@ const devices = {
   doorbellCamera: { status: "off", room: "Entrance" },
   smartLock: { status: "off", room: "Entrance" },
   securityCamera: { status: "off", room: "Entrance" },
-};
 };
 
 const schedules = [];
